@@ -54,14 +54,14 @@ public class VerfierSignature {
 		String dechiffreSignature = dechiffreSignature(Y, new BigInteger(filePubSplit[2]),new BigInteger(filePubSplit[1]));
 		
 		if(verifSignature(messageDigest,dechiffreSignature)){
-			System.out.println("Signature verifieé");
+			System.out.println("Signature valide");
 			System.out.println(messageDigest);
 			System.out.println("-----------------------------");
 			System.out.println(dechiffreSignature);
 		}
 				
 		else{
-			System.out.println("Signature non verifieé");
+			System.out.println("Signature non valide");
 			System.out.println(messageDigest);
 			System.out.println("-----------------------------");
 			System.out.println(dechiffreSignature);
