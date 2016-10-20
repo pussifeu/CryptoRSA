@@ -5,7 +5,6 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 /**
  * Classe pour la generation des clé et enregistrement dans un fichier
- * @author antonio
  *
  */
 public class GenerateKey {

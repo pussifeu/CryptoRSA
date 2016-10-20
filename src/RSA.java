@@ -4,7 +4,6 @@ import java.math.BigInteger;
 /**
  * Combinaison du programme
  * 
- * @author antonio
  *
  */
 public class RSA {

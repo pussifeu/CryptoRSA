@@ -4,8 +4,6 @@ import java.util.Random;
 /**
  * Bug
  * Classe pou generer et verifier si un nombre est premier
- * @author antonio
- *
  */
 public class GeneratePrimeNumbers {
 

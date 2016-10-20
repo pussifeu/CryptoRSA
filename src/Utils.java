@@ -5,7 +5,6 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Utilitaire
- * @author antonio
  *
  */
 public class Utils {

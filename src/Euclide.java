@@ -1,8 +1,6 @@
 import java.math.BigInteger;
 /**
  * Classe pour les algorithme d'euclide etendu et la fonction qui fait la modInverse
- * @author antonio
- *
  */
 public class Euclide {
 

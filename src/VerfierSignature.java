@@ -4,7 +4,11 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
-
+/**
+ * classe qui charge la verification de la signature
+ *
+ *
+ */
 //DSm=D(Kpb,SM)=D(Kpb,C(Kpr,H(M)))=H(M)
 //Car SM = C(Kpr,H(M)) 
 public class VerfierSignature {
@@ -69,7 +73,9 @@ public class VerfierSignature {
 			throws UnsupportedEncodingException {
 		return DeChiffrer.dechiffrer(Y, pubKey, n);
 	}
-	
+	/**
+	 * Verification du signature
+	 */
 	public static Boolean verifSignature(String messageDigest, String signatureDechiffrer){
 		
 		return messageDigest.equals(signatureDechiffrer);

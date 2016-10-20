@@ -5,7 +5,6 @@ import java.math.BigInteger;
 
 /**
  * Dechiffrement
- * @author antonio
  *
  */
 public class DeChiffrer {
