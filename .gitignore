@@ -1,2 +1,5 @@
 /build/
 /src/*.class
+/src/*.pub
+/src/*.priv
+/src/*.chiffre
