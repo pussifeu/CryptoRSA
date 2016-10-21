@@ -17,11 +17,11 @@ public class GenerateKey {
 	private Euclide eucl = new Euclide();
 
 	public GenerateKey(int bitLength) {
-		p = BigInteger.probablePrime(bitLength / 2, new SecureRandom());
-		q = BigInteger.probablePrime(bitLength / 2, new SecureRandom());
+		//p = BigInteger.probablePrime(bitLength / 2, new SecureRandom());
+		//q = BigInteger.probablePrime(bitLength / 2, new SecureRandom());
 		
-		//p = GeneratePrimeNumbers.primeNumberGenerate(bitLength);
-		//q = GeneratePrimeNumbers.primeNumberGenerate(bitLength);
+		p = GeneratePrimeNumbers.primeNumberGenerate(bitLength);
+		q = GeneratePrimeNumbers.primeNumberGenerate(bitLength);
 		
 		n = p.multiply(q);
 		phiDeN = p.subtract(new BigInteger("1")).multiply(q.subtract(new BigInteger("1"))); 

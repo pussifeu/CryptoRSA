@@ -2,12 +2,12 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Random;
 /**
- * Bug
+ * 
  * Classe pou generer et verifier si un nombre est premier
  */
 public class GeneratePrimeNumbers {
 
-	static int k = 300;
+	static int k = 40;
 	public GeneratePrimeNumbers() {
 		// TODO Auto-generated constructor stub
 	}
@@ -85,7 +85,16 @@ public class GeneratePrimeNumbers {
 	public static BigInteger primeNumberGenerate(int nbBits) {
 		BigInteger nombreAleatoire = new BigInteger(nbBits, new SecureRandom());
 		if (estPremierRapide(nombreAleatoire, k)) 
-			return nombreAleatoire;
+		{
+			if(nombreAleatoire.isProbablePrime(k)){
+
+				return nombreAleatoire;
+				
+			}
+			else{
+				return primeNumberGenerate(nbBits);
+			}
+		}
 		else 
 			return primeNumberGenerate(nbBits);
 	}
