@@ -27,4 +27,4 @@ $cat message.txt | java Signature jol-512
 
 5- Vérification de signature :  Programme : VerfierSignature.java
 
-$cat message.txt | java VerfierSignature signature-jol-512.chiffre
+$cat message.txt | java VerfierSignature jol-512 signature-jol-512
