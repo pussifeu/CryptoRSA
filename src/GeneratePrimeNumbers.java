@@ -86,14 +86,10 @@ public class GeneratePrimeNumbers {
 		BigInteger nombreAleatoire = new BigInteger(nbBits, new SecureRandom());
 		if (estPremierRapide(nombreAleatoire, k)) 
 		{
-			if(nombreAleatoire.isProbablePrime(k)){
-
-				return nombreAleatoire;
-				
-			}
-			else{
+			if(nombreAleatoire.isProbablePrime(k))
+				return nombreAleatoire;	
+			else
 				return primeNumberGenerate(nbBits);
-			}
 		}
 		else 
 			return primeNumberGenerate(nbBits);
